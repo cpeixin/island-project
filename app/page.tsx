@@ -24,7 +24,7 @@ export default function IslandHome() {
             <Anchor size={16} />
           </div>
           <h1 className="text-sm font-bold tracking-widest text-slate-800 uppercase">
-            Island Project <span className="font-light text-slate-500">Lab.</span>
+            岛屿实验室 <span className="font-light text-slate-500">小马同学.</span>
           </h1>
         </div>
         <div className="text-[10px] bg-white/50 px-2 py-1 rounded-full text-slate-400 border border-slate-200">
