@@ -63,11 +63,19 @@ export default function IslandHome() {
               }`}
             >
               {m.role !== 'user' && (
-                <div className="flex items-center gap-1 mb-2 text-xs text-blue-400/80 font-medium">
-                  <Sparkles size={12} />
-                  <span>Echo (守塔人)</span>
-                </div>
-              )}
+                  <div className="flex items-center gap-2 mb-3">
+                    {/* 图标换成了 Wind (风)，更符合逍遥的气质 */}
+                    <div className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-100/50 text-blue-600">
+                       {/* 如果 Wind 报错，请确保在顶部 import { Wind } from 'lucide-react'; */}
+                       {/* 或者你可以继续用 Anchor 或 Sparkles */}
+                       <Anchor size={14} /> 
+                    </div>
+                    
+                    <span className="text-xs font-bold text-slate-600 tracking-wider">
+                      逍遥 · 守岛人
+                    </span>
+                  </div>
+                )}
               <div className="whitespace-pre-wrap font-light tracking-wide">
                 {m.content}
               </div>
